@@ -11,12 +11,11 @@ package com.wk.factoryMethod.framework
  * </pre>
  */
 abstract class AbstractFactory {
-    fun create(name:String):Product{
-        val product=createProduct(name);
-        registerProduct(product)
-        return product
-    }
 
-    abstract fun createProduct(name:String):Product
-    abstract fun registerProduct(product: Product)
+    abstract fun createProduct(): Product
+
+    fun useProduct() {
+        val product = createProduct()
+        product.use()
+    }
 }

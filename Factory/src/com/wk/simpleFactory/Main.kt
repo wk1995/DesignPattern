@@ -2,7 +2,6 @@ package com.wk.simpleFactory
 
 import com.wk.simpleFactory.product.NumberFactory
 
-
 object Main {
 
     @JvmStatic

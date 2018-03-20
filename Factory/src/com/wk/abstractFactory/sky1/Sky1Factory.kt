@@ -20,5 +20,6 @@ class Sky1Factory: FlightFactory {
 
     override fun createGps()=Sky1Gps()
 
-    override fun createFlight(gps: Gps, dataTrans: DataTrans)=Sky1Flight(dataTrans,gps)
+    override fun createFlight(gps: Gps, dataTrans: DataTrans)
+            =Sky1Flight(dataTrans,gps)
 }

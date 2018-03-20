@@ -14,12 +14,7 @@ import com.wk.factoryMethod.framework.Product
  * </pre>
  */
 class IdCardFactory: AbstractFactory() {
-    val owners by lazy {ArrayList<String>()}
-    override fun createProduct(name: String): Product {
-        return IdCard(name)
-    }
-
-    override fun registerProduct(product: Product) {
-        owners.add(product.name)
+    override fun createProduct(): Product {
+        return IdCard("wkCard")
     }
 }

@@ -18,6 +18,10 @@ import java.io.InputStreamReader;
 public class Test {
 
     public static void main(String[] a) {
+
+    }
+
+    private  void test1(){
         int count=0;
         try {
             BufferedReader mBufferedReader =
@@ -25,7 +29,7 @@ public class Test {
                             new InputStreamReader(
                                     new FileInputStream(
                                             "D:\\1.txt")
-                                    ));
+                            ));
             BufferedReader mBufferedReader1 =
                     new BufferedReader(
                             new InputStreamReader(
@@ -37,8 +41,8 @@ public class Test {
             while((tmp=mBufferedReader.readLine())!=null && (tmp1=mBufferedReader1.readLine())!=null){
                 count++;
                 if(!tmp.equals(tmp1)){
-                  System.out.println(count+"    "+tmp+"   "+tmp1);
-              }
+                    System.out.println(count+"    "+tmp+"   "+tmp1);
+                }
 
             }
 
