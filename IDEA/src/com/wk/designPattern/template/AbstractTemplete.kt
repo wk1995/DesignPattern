@@ -1,4 +1,4 @@
-package com.wk.designPattern.templete
+package com.wk.designPattern.template
 
 /**
  * <pre>

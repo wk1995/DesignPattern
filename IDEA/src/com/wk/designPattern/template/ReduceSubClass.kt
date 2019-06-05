@@ -1,4 +1,4 @@
-package com.wk.designPattern.templete
+package com.wk.designPattern.template
 
 
 /**
@@ -11,16 +11,16 @@ package com.wk.designPattern.templete
  *      desc   :
  * </pre>
  */
-class AddSubclass:AbstractTemplete() {
+class ReduceSubClass:AbstractTemplete() {
     override fun start() {
-        println("this is addSubclass start")
+        println("this is ReduceSubClass start")
     }
 
     override fun done() {
-        println("this is addSubclass done")
+        println("this is ReduceSubClass done")
     }
 
     override fun end() {
-        println("this is addSubclass end")
+        println("this is ReduceSubClass end")
     }
 }
